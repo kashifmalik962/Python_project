@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Product Page</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>Flipkart</b><i class="bi bi-list"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Become a Seller</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Search for Products,brand and
+              more</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"> <i
+                class="fas fa-search"></i></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="product-box">
+        <div class="all-images">
+          <div class="small-images">
+            <img src="d1.webp" onclick="clickimg(this)">
+            <img src="d2.webp" onclick="clickimg(this)">
+            <img src="d3.webp" onclick="clickimg(this)">
+            <img src="d4.webp" onclick="clickimg(this)">
+          </div>
+          <div class="main-images">
+            <img src="d1.webp" height="250" width="200" id="image-box">
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <div class="content">
+          <p class="brand">Brand : Apple</p>
+          <h2>APPLE iPhone 14 Pro Max (Space Black, 128 GB)</h2>
+          <div class="review">
+            <span>(4.6)</span>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price-box">
+            <p class="price">&#8377; 1,39,900</p>
+            <strike>&#8377; 1,49,900</strike>
+          </div>
+          <p>Size : <select name="Size">
+              <option value="select colour">black </option>
+              <option value="black">black</option>
+              <option value="blue">blue</option>
+              <option value="green">green</option>
+              <option value="purple">purple</option>
+            </select></p>
+
+          <p>Quantity <input type="text" value="1"></p>
+          <button>
+            <span class="fa fa-shopping-cart"></span>
+            <a href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART">Add to cart</a>
+
+          </button>
+          <button class="buy">
+            <span class="fa fa-shopping-cart"></span>
+            <a href="https://www.flipkart.com/checkout/init?otracker=AS_Query_HistoryAutoSuggest_2_0"> Buy
+              now</a>
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------Informations------- -->
+
+  <div class="sub-container">
+    <div class="row">
+      <div class="col-6a">
+        <h1>Available offers</h1>
+        <div class="para">
+          <p><i class="fa-brands fa-apple "></i > Bank Offer 10% off on Citi Credit Card Transactions, up to ₹1,500. On orders of ₹5,000 and above <span class="j"> <u> T&C</u> </span> </p>
+          <p><i class="fa-brands fa-apple "></i> Bank Offer 10% off on Citi Credit Card EMI Transactions, up to ₹2,000. On orders of ₹5,000 and above <span class="j"> <u> T&C </u></span></p>
+          <p><i class="fa-brands fa-apple "></i> Bank Offer 10% off on Citi Debit Card Transactions, up to ₹1,500. On orders of ₹5,000 and above <span class="j"> <u> T&C</u></span></p>
+          <p><i class="fa-brands fa-apple "></i> FreebieBYJU'S 3 Live Classes worth ₹999 <span class="j"> <u> T&C</u></span></p>
+        </div>
+      </div>
+      <div class="col-6b">
+        <div class="card" style="width:400px">
+          <div class="card-body">
+            <h4 class="card-title">Buy without Exchange <ul>&#8377;189,900 </ul>
+            </h4>
+            <p class="card-text">Buy with Exchange
+              up to ₹21,500 off
+
+              Get extra ₹3,000 off on exchange of select models
+              Enter pincode to check if exchange is available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="mini-container">
+      <div class="row">
+        <div class="col-4c">
+          <h2><b> Highlights</b></h2>
+          <p>
+            <li>256 GB ROM</li>
+          </p>
+          <p>
+            <li>17.02 cm (6.7 inch) Super Retina XDR Display</li>
+          </p>
+          <p>
+            <li>12MP + 12MP + 12MP | 12MP Front Camera</li>
+          </p>
+          <p>
+            <li>A15 Bionic Chip Processor</li>
+          </p>
+        </div>
+
+        <div class="col-4d">
+          <h2><b> Easy Payment Options</b></h2>
+          <p>
+            <li> No cost EMI starting from ₹23,317/month</li>
+          </p>
+          <p>
+            <li> Cash on Delivery</li>
+          </p>
+          <p>
+            <li> Net banking & Credit/ Debit/ ATM card</li>
+          </p>
+        </div>
+
+        <div class="col-4e">
+          <h2><b> Delivery</b></h2>
+          <p><i class="fas fa-map-marker-alt"></i><span class="cd"><u> Enter Delivery Code</u> <span
+                class="de"><u>Check</u></span></span></p>
+          <p>
+            <li> Usually delivered in 3 days
+          </p>
+          </li>
+          <p>
+            <li> Enter pincode for delivery dates/charges</li>
+          </p>
+          <p>
+            <li class="ab"> View Details </li>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <h2> <b> Description</b></h2>
+        </div>
+        <div class="col-10">
+          <p>
+            iPhone 13.boasts an advanced dual-camera system that allows you to click mesmerising pictures with immaculate clarity. Furthermore, the lightning-fast A15 Bionic chip allows for seamless multitasking, elevating your performance to a new dimension. A big leap in battery life, a durable design, and a bright Super Retina XDR display facilitate boosting your user experience.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
