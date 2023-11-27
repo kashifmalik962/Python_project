@@ -1,6 +1,6 @@
 function onPageLoad() {
     console.log("document loaded");
-    var url = "http://192.168.0.114:5000/location"; // Adjust the URL as per your Flask route
+    var url = "http://192.168.10.197:5000/location"; // Adjust the URL as per your Flask route
     $.get(url, function(data, status) {
         console.log("got response for get_location_names request");
         if (data && data.locations) {

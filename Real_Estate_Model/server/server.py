@@ -30,4 +30,4 @@ def location():
 
 if __name__ == "__main__":
     print("Starting Python Flask Server for Home Price Pridiction...")
-    app.run(debug=True,host='192.168.0.114', port=5000)
+    app.run(debug=True,host='192.168.10.197', port=5000)
