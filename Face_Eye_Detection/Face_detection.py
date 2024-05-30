@@ -1,3 +1,4 @@
+# Face detection library
 import cv2
 
 # Load the pre-trained face detector
