@@ -5,7 +5,7 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 
 # Load the image
 
-image = cv2.imread(r'D:\jupyter\Python_project\Humans.jpg')
+image = cv2.imread(r'D:\Python_project\Face_Eye_Detection\Danish.jpg')
 
 # Convert the image to grayscale for face detection
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

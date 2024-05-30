@@ -4,7 +4,7 @@ import util
 app = Flask(__name__)
 
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST']) 
 def main():
     if request.method=='POST':
         total_sqft = float(request.form['total_sqft'])
@@ -18,7 +18,7 @@ def main():
             # formatted_number = formatted_number.replace(",", ",")
             return jsonify('\u20B9',predict_val)
         return "Please provide a valid detail"
-    return render_template('home.html')
+    return render_template('index.html')
 
 
 @app.route('/location')

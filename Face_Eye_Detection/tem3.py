@@ -4,7 +4,7 @@ import cv2
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
 # Read the input image
-img = cv2.imread(r"D:\jupyter\Python_project\360_F_340010655_vc2OG2zgRuUxXMqmH2iyNlkz5LL14isp.jpg")
+img = cv2.imread(r"D:\Python_project\Face_Eye_Detection\deloitte-nl-cm-digital-human-promo.avif")
 # print(img)
 
 # Convert the image to grayscale
